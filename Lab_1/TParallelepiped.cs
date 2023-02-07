@@ -22,14 +22,11 @@ namespace Lab_1
             this.width = parall.width;
             this.length = parall.length;
         }
-        public new void SetData(float w, float l)
+        public new void SetData(float w, float l, float h)
         {
-            Console.WriteLine("Enter width of the base: ");
-            width = float.Parse(Console.ReadLine());
-            Console.WriteLine("Enter length of the base: ");
-            length = float.Parse(Console.ReadLine());
-            Console.WriteLine("Enter the hight: ");
-            height = float.Parse(Console.ReadLine());
+            width = w;
+            length = l;
+            height = h;
         }
         public new void GetData()
         {

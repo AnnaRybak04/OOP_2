@@ -1,0 +1,15 @@
+D:\Документы\универ\Лаби\ООП_2\OOP_2\Lab_1\bin\Debug\net6.0\Lab_1.exe
+D:\Документы\универ\Лаби\ООП_2\OOP_2\Lab_1\bin\Debug\net6.0\Lab_1.deps.json
+D:\Документы\универ\Лаби\ООП_2\OOP_2\Lab_1\bin\Debug\net6.0\Lab_1.runtimeconfig.json
+D:\Документы\универ\Лаби\ООП_2\OOP_2\Lab_1\bin\Debug\net6.0\Lab_1.dll
+D:\Документы\универ\Лаби\ООП_2\OOP_2\Lab_1\bin\Debug\net6.0\Lab_1.pdb
+D:\Документы\универ\Лаби\ООП_2\OOP_2\Lab_1\obj\Debug\net6.0\Lab_1.csproj.AssemblyReference.cache
+D:\Документы\универ\Лаби\ООП_2\OOP_2\Lab_1\obj\Debug\net6.0\Lab_1.GeneratedMSBuildEditorConfig.editorconfig
+D:\Документы\универ\Лаби\ООП_2\OOP_2\Lab_1\obj\Debug\net6.0\Lab_1.AssemblyInfoInputs.cache
+D:\Документы\универ\Лаби\ООП_2\OOP_2\Lab_1\obj\Debug\net6.0\Lab_1.AssemblyInfo.cs
+D:\Документы\универ\Лаби\ООП_2\OOP_2\Lab_1\obj\Debug\net6.0\Lab_1.csproj.CoreCompileInputs.cache
+D:\Документы\универ\Лаби\ООП_2\OOP_2\Lab_1\obj\Debug\net6.0\Lab_1.dll
+D:\Документы\универ\Лаби\ООП_2\OOP_2\Lab_1\obj\Debug\net6.0\refint\Lab_1.dll
+D:\Документы\универ\Лаби\ООП_2\OOP_2\Lab_1\obj\Debug\net6.0\Lab_1.pdb
+D:\Документы\универ\Лаби\ООП_2\OOP_2\Lab_1\obj\Debug\net6.0\Lab_1.genruntimeconfig.cache
+D:\Документы\универ\Лаби\ООП_2\OOP_2\Lab_1\obj\Debug\net6.0\ref\Lab_1.dll
