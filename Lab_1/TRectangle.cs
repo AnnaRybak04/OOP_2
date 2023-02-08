@@ -72,11 +72,11 @@ namespace Lab_1
             }
             else if (this.GetSquare() > rectangle.GetSquare())
             {
-                Console.WriteLine("Rectangle 1 bigger than rectangle 2");
+                Console.WriteLine("Rectangle 1 is bigger than rectangle 2");
             }
             else
             {
-                Console.WriteLine("Rectangle 2 bigger than rectangle 1");
+                Console.WriteLine("Rectangle 2 is bigger than rectangle 1");
             }
         }
         public static TRectangle operator +(TRectangle rectangle1, TRectangle rectangle2)

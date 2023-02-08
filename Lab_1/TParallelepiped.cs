@@ -59,11 +59,11 @@ namespace Lab_1
             }
             else if (this.GetSquare() > parall.GetSquare())
             {
-                Console.WriteLine("Parallelepiped 1 bigger than parallelepiped 2");
+                Console.WriteLine("Parallelepiped 1 is bigger than parallelepiped 2");
             }
             else
             {
-                Console.WriteLine("Parallelepiped 2 bigger than parallelepiped 1");
+                Console.WriteLine("Parallelepiped 2 is bigger than parallelepiped 1");
             }
         }
         public static TParallelepiped operator +(TParallelepiped parall1, TParallelepiped parall2)
