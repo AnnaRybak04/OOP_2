@@ -8,36 +8,78 @@ namespace Lab_1
 {
     internal class TRectangle
     {
-        public float width, length;
+        protected float width, length;
 
         public TRectangle() { }
-        public TRectangle(float side_1, float side_2)
+        public TRectangle(float w, float l)
         {
-            width = side_1;
-            length = side_2;
+            try
+            {
+                if(w <= 0 || l <= 0)
+                {
+                    throw new ArgumentOutOfRangeException("Wrong values!");
+                }
+                else
+                {
+                    width = w;
+                    length = l;
+                }
+            }
+            catch (ArgumentOutOfRangeException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            
         }
         public TRectangle(TRectangle rectangle)
         {
             width = rectangle.width;
             length = rectangle.length;
-        }
-        public void SetData(float w, float l)
+        }/*
+        public virtual void SetData(float w, float l)
         {
-            width = w;
-            length = l;
+            try
+            {
+                if (w <= 0 || l <= 0)
+                {
+                    throw new ArgumentOutOfRangeException("Wrong values!");
+                }
+                else
+                {
+                    width = w;
+                    length = l;
+                }
+            }
+            catch (ArgumentOutOfRangeException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
         }
-        public void GetData()
-        {
-            Console.WriteLine("Width: " + width);
+        public virtual void GetData() {
+            Console.WriteLine("Width : " + width);
             Console.WriteLine("Length: " + length);
-        }
-        public float GetSquare()
+           
+        }*/
+
+        public virtual float Width
         {
-            return width * length;
+            get { return width; }
+            set { if (value > 0) width = value; }
         }
-        public float GetPerimeter()
+        public virtual float Length
         {
-            return (width + length) * 2;
+            get { return length; }
+            set { if (value > 0) length = value; }
+        }
+       
+        public virtual float GetSquare()
+        {
+            return Width * Length;
+        }
+        public virtual float GetPerimeter()
+        {
+            return (Width + Length) * 2;
         }
         public void CompareRectangles(TRectangle rectangle)
         {
@@ -56,15 +98,15 @@ namespace Lab_1
         }
         public static TRectangle operator +(TRectangle rectangle1, TRectangle rectangle2)
         {
-            return new TRectangle(rectangle1.width + rectangle2.width, rectangle1.length + rectangle2.length);
+            return new TRectangle(rectangle1.Width + rectangle2.Width, rectangle1.Length + rectangle2.Length);
         }
         public static TRectangle operator -(TRectangle rectangle1, TRectangle rectangle2)
         {
-            return new TRectangle(Math.Abs(rectangle1.width - rectangle2.width), Math.Abs(rectangle1.length - rectangle2.length));
+            return new TRectangle(Math.Abs(rectangle1.Width - rectangle2.Width), Math.Abs(rectangle1.Length - rectangle2.Length));
         }
         public static TRectangle operator *(TRectangle rectangle, float num)
         {
-            return new TRectangle(rectangle.width * num, rectangle.length * num);
+            return new TRectangle(rectangle.Width * num, rectangle.Length * num);
         }
     
     }
