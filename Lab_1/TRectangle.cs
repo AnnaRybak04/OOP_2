@@ -35,42 +35,25 @@ namespace Lab_1
         {
             width = rectangle.width;
             length = rectangle.length;
-        }/*
-        public virtual void SetData(float w, float l)
-        {
-            try
-            {
-                if (w <= 0 || l <= 0)
-                {
-                    throw new ArgumentOutOfRangeException("Wrong values!");
-                }
-                else
-                {
-                    width = w;
-                    length = l;
-                }
-            }
-            catch (ArgumentOutOfRangeException ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
-
         }
-        public virtual void GetData() {
-            Console.WriteLine("Width : " + width);
-            Console.WriteLine("Length: " + length);
-           
-        }*/
 
         public virtual float Width
         {
             get { return width; }
-            set { if (value > 0) width = value; }
+            set { if (value > 0) 
+                    width = value;
+                else
+                    Console.WriteLine("The value have to be positive!");
+            }
         }
         public virtual float Length
         {
             get { return length; }
-            set { if (value > 0) length = value; }
+            set { if (value > 0)
+                    length = value;
+                else
+                    Console.WriteLine("The value have to be positive!");
+            }
         }
        
         public virtual float GetSquare()

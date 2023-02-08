@@ -10,39 +10,46 @@ namespace Lab_1
     {
         private float height;
         public TParallelepiped() { }
-        public TParallelepiped(float side1, float side2, float height) : base(side1, side2)
+        public TParallelepiped(float w, float l, float height) : base(w, l)
         {
             this.height = height;
         }
         public TParallelepiped(TParallelepiped parall)
         {
-            this.height = parall.height;
-            this.width = parall.width;
-            this.length = parall.length;
+            height = parall.Height;
+            width = parall.Width;
+            length = parall.Length;
         }
-        public new void SetData(float w, float l, float h)
+        public override float Width
         {
-            width = w;
-            length = l;
-            height = h;
+            get { return base.Width; }
+            set { if (value > 0) 
+                    base.Width = value; }
         }
-        public new void GetData()
+        public override float Length
         {
-            Console.WriteLine("Width of the base: " + width);
-            Console.WriteLine("Length of the base: " + length);
-            Console.WriteLine("Height: " + height);
+            get { return base.Length; }
+            set { if (value > 0) 
+                    base.Length = value; }
         }
-        public new float GetSquare()
+        public float Height
         {
-            return (width + length) * 2 * height + 2 * width * length;
+            get { return height; }
+            set { if (value > 0)
+                    height = value; }
         }
-        public new float GetPerimeter()
+
+        public override float GetSquare()
         {
-            return (width + length + height) * 4;
+            return (Width + Length) * 2 * Height + 2 * Width * Length;
+        }
+        public override float GetPerimeter()
+        {
+            return (Width + Length + Height) * 4;
         }
         public float GetVolume()
         {
-            return height * GetSquare();
+            return Height * GetSquare();
         }
         public void CompareParallelepipeds(TParallelepiped parall)
         {
@@ -61,15 +68,15 @@ namespace Lab_1
         }
         public static TParallelepiped operator +(TParallelepiped parall1, TParallelepiped parall2)
         {
-            return new TParallelepiped(parall1.width + parall2.width, parall1.length + parall2.length, parall1.height + parall2.height);
+            return new TParallelepiped(parall1.Width + parall2.Width, parall1.Length + parall2.Length, parall1.Height + parall2.Height);
         }
         public static TParallelepiped operator -(TParallelepiped parall1, TParallelepiped parall2)
         {
-            return new TParallelepiped(Math.Abs(parall1.width - parall2.width), Math.Abs(parall1.length - parall2.length), Math.Abs(parall1.height - parall2.height));
+            return new TParallelepiped(Math.Abs(parall1.Width - parall2.Width), Math.Abs(parall1.Length - parall2.Length), Math.Abs(parall1.Height - parall2.Height));
         }
         public static TParallelepiped operator *(TParallelepiped parall, float num)
         {
-            return new TParallelepiped(parall.width * num, parall.length * num, parall.height * num);
+            return new TParallelepiped(parall.Width * num, parall.Length * num, parall.Height * num);
         }
     }
 }
