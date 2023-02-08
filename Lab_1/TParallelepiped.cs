@@ -8,12 +8,10 @@ namespace Lab_1
 {
     internal class TParallelepiped : TRectangle
     {
-        public float height;
+        private float height;
         public TParallelepiped() { }
-        public TParallelepiped(float side1, float side2, float height)
+        public TParallelepiped(float side1, float side2, float height) : base(side1, side2)
         {
-            this.width = side1;
-            this.length = side2;
             this.height = height;
         }
         public TParallelepiped(TParallelepiped parall)
