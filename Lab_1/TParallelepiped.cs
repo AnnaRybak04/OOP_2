@@ -49,7 +49,7 @@ namespace Lab_1
         }
         public float GetVolume()
         {
-            return Height * GetSquare();
+            return Height * base.GetSquare();
         }
         public void CompareParallelepipeds(TParallelepiped parall)
         {
