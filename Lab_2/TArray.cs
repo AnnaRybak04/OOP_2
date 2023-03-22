@@ -23,11 +23,26 @@
         }
         public void Task3(double[] arr)
         {
-            Array.Sort(arr);
+            BubbleSort(arr);
             Array.Reverse(arr);
             for(int i=0;i< arr.Length; i++)
             {
                 Console.Write(arr[i]+" ");
+            }
+        }
+        public void BubbleSort(double[] arr)
+        {
+            for (int i = 0; i < arr.Length - 1; i++)
+            {
+                for (int j = 0; j < arr.Length - i - 1; j++)
+                {
+                    if (arr[j] > arr[j + 1])
+                    {
+                        double temp = arr[j];
+                        arr[j] = arr[j + 1];
+                        arr[j + 1] = temp;
+                    }
+                }
             }
         }
        
