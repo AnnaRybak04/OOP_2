@@ -12,19 +12,23 @@ namespace Lab_3
 
         public Triangle(float a, float b, float c)
         {
-            if (a <= 0 || b <= 0 || c <= 0)
-            {
-                throw new ArgumentException("Triangle sides must be positive numbers");
-            }
+            try { 
+                if (a <= 0 || b <= 0 || c <= 0)
+                {
+                    throw new ArgumentException("Triangle sides must be positive numbers");
+                }
 
-            if (a + b <= c || a + c <= b || b + c <= a)
-            {
-                throw new ArgumentException("Invalid triangle sides");
-            }
+                if (a + b <= c || a + c <= b || b + c <= a)
+                {
+                    throw new ArgumentException("Invalid triangle sides");
+                }
 
-            side1 = a;  
-            side2 = b;
-            side3 = c;
+                side1 = a;  
+                side2 = b;
+                side3 = c;
+             }catch(Exception e){
+                Console.WriteLine(e.Message);
+            }
         }
        
     }
