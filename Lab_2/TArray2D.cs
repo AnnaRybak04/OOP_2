@@ -3,12 +3,13 @@
     internal class TArray2D
     {
         public TArray2D() { }
+
         public void Task1(int[,] arr)
         {
             int[,] newArr = new int[arr.GetLength(0), arr.GetLength(1)];
             for (int i = 0; i < arr.GetLength(0); i++)
             {
-                if (i % 2 == 0)
+                if (i % 2 != 0)
                 {
                     for (int j = 0; j < arr.GetLength(1); j++)
                     {
