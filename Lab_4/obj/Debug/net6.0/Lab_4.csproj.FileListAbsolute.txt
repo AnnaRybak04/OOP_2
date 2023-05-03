@@ -1,0 +1,15 @@
+D:\Документы\универ\Лаби\4 семестр\ООП_2\OOP_2\Lab_4\bin\Debug\net6.0\Lab_4.exe
+D:\Документы\универ\Лаби\4 семестр\ООП_2\OOP_2\Lab_4\bin\Debug\net6.0\Lab_4.deps.json
+D:\Документы\универ\Лаби\4 семестр\ООП_2\OOP_2\Lab_4\bin\Debug\net6.0\Lab_4.runtimeconfig.json
+D:\Документы\универ\Лаби\4 семестр\ООП_2\OOP_2\Lab_4\bin\Debug\net6.0\Lab_4.dll
+D:\Документы\универ\Лаби\4 семестр\ООП_2\OOP_2\Lab_4\bin\Debug\net6.0\Lab_4.pdb
+D:\Документы\универ\Лаби\4 семестр\ООП_2\OOP_2\Lab_4\obj\Debug\net6.0\Lab_4.csproj.AssemblyReference.cache
+D:\Документы\универ\Лаби\4 семестр\ООП_2\OOP_2\Lab_4\obj\Debug\net6.0\Lab_4.GeneratedMSBuildEditorConfig.editorconfig
+D:\Документы\универ\Лаби\4 семестр\ООП_2\OOP_2\Lab_4\obj\Debug\net6.0\Lab_4.AssemblyInfoInputs.cache
+D:\Документы\универ\Лаби\4 семестр\ООП_2\OOP_2\Lab_4\obj\Debug\net6.0\Lab_4.AssemblyInfo.cs
+D:\Документы\универ\Лаби\4 семестр\ООП_2\OOP_2\Lab_4\obj\Debug\net6.0\Lab_4.csproj.CoreCompileInputs.cache
+D:\Документы\универ\Лаби\4 семестр\ООП_2\OOP_2\Lab_4\obj\Debug\net6.0\Lab_4.dll
+D:\Документы\универ\Лаби\4 семестр\ООП_2\OOP_2\Lab_4\obj\Debug\net6.0\refint\Lab_4.dll
+D:\Документы\универ\Лаби\4 семестр\ООП_2\OOP_2\Lab_4\obj\Debug\net6.0\Lab_4.pdb
+D:\Документы\универ\Лаби\4 семестр\ООП_2\OOP_2\Lab_4\obj\Debug\net6.0\Lab_4.genruntimeconfig.cache
+D:\Документы\универ\Лаби\4 семестр\ООП_2\OOP_2\Lab_4\obj\Debug\net6.0\ref\Lab_4.dll
